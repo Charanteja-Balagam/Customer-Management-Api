@@ -50,5 +50,28 @@ JDBC URL: jdbc:h2:mem:testdb
 Username: sa  (you can setup in your application properties file)
 Password: -
 
-Swagger UI:
+**Swagger UI:**
 URL: http://localhost:8080/swagger-ui.html
+
+**Assumptions:**
+Case-Insensitive Name Search:
+I Assumed that the findByName functionality should support case-insensitive matching to improve usability and reduce potential mismatches due to capitalization differences in user input.
+Used custom query to support case-insensitivity.
+
+Tier Calculation Logic:
+Based the tier logic on both annualSpend and lastPurchaseDate. For example:
+Platinum: Spend >= 10,000 and purchase within 6 months
+Gold: Spend >= 1,000 and purchase within 12 months
+Silver: All others
+The calculation is performed dynamically in the CustomerResponse constructor.
+
+Test Coverage Approach:
+Unit tests were written only for the CustomerServiceImpl class, assuming that testing the service layer thoroughly covers the business logic(as per the document).
+
+No Authentication:
+Assumed that this API is open and does not require authentication, as no auth-related constraints were mentioned.
+
+No Data Check:
+No uniqueness constraint on email was assumed or enforced at the DB level, unless explicitly required.
+
+
