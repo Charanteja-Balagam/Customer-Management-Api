@@ -4,10 +4,10 @@ This Spring Boot application provides a RESTful API to manage customer data. It 
 The application is designed following clean architecture principles, incorporates input validation, and is documented with OpenAPI.
 
 **Build And Run:**
-   git clone https://github.com/your-username/customer-management-service.git
-   cd customer-management-service
-   mvn clean install
-   mvn spring-boot:run (Application will be deployed on Local host : 8080 , make sure there are no other applications running at that port or change the server.port in the application.properties file)
+   ->git clone https://github.com/your-username/customer-management-service.git
+   ->cd customer-management-service
+   -> mvn clean install
+   ->mvn spring-boot:run (Application will be deployed on Local host : 8080 , make sure there are no other applications running at that port or change the server.port in the application.properties file)
 
 **API Endpoints**
 
