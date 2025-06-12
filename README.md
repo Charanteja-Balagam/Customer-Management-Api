@@ -53,6 +53,10 @@ Password: -
 **Swagger UI:**
 URL: http://localhost:8080/swagger-ui.html
 
+**JaCoCo code coverage:**
+1.Run : mvn clean verify
+2.Naviagte to the report location in project: target/site/jacoco/index.html(open in browser)
+
 **Assumptions:**
 Case-Insensitive Name Search:
 I Assumed that the findByName functionality should support case-insensitive matching to improve usability and reduce potential mismatches due to capitalization differences in user input.
